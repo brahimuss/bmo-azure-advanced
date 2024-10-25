@@ -22,10 +22,10 @@ jobs:
           dotnet-version: '8.x'
 
       - name: Build with dotnet
-        run: dotnet build "AZADVANCEDAPI/AZADVANCEDAPI.csproj" --configuration Release
+        run: dotnet build  --configuration Release
 
       - name: dotnet publish
-        run: dotnet publish "AZADVANCEDAPI/AZADVANCEDAPI.csproj" -c Release -o ${{github.workspace}}/myapp
+        run: dotnet publish  -c Release -o ${{github.workspace}}/myapp
 
 
       - name: Upload artifact for deployment job
