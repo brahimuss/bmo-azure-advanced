@@ -1,0 +1,6 @@
+@azadvancedapi_HostAddress = https://bmo-azure-advanced-g3abgfbuc5f5fnda.francecentral-01.azurewebsites.net/weatherforcast
+
+GET {{azadvancedapi_HostAddress}}/weatherforecast
+Accept: application/json
+
+###
