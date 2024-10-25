@@ -20,7 +20,7 @@ app.MapGet("/", (IConfiguration config) =>
 {
     // Access a key-value from Azure App Configuration
     var mySetting = config["MySettingKey"] ?? "Default value";
-    if (true) throw new Exception("execption");
+
     return Results.Ok(new { Setting = mySetting });
 });
 
